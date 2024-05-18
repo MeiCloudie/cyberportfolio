@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 header .collapse .nav-link:hover {
   color: green !important;
 }
@@ -148,7 +152,29 @@ header .collapse .active::before {
 }
 
 /* back to top */
+.back_to_top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  opacity: 0;
+  visibility: hidden;
+}
 
+body .cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: 0.5;
+}
 
 @keyframes zoomOut {
   from {
