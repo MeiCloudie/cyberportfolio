@@ -156,13 +156,13 @@ header .collapse .active::before {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: red;
+  background-color: green;
   color: white;
   text-align: center;
-  line-height: 60px;
-  width: 60px;
-  height: 60px;
-  border-radius: 12px;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
   opacity: 0;
   visibility: hidden;
 }
@@ -174,6 +174,41 @@ body .cd-top--is-visible {
 
 .cd-top--fade-out {
   opacity: 0.5;
+}
+
+/* css cyber_available */
+.cyber_available {
+  position: relative;
+  color: white;
+  background-image: url(./img/3.jpg);
+  background-position: center;
+  padding: 80px 0;
+  text-align: center;
+}
+.cyber_available::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(7, 10, 12, 0.808);
+}
+
+.cyber_available .cyber_avai_item {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.5s;
+}
+
+.cyber_available .cyber_avai_item:hover {
+  border-color: white;
+  background-color: black;
 }
 
 @keyframes zoomOut {
