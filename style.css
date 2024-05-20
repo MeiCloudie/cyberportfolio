@@ -243,6 +243,53 @@ body .cd-top--is-visible {
   padding: 45px;
 }
 
+/* css footer  */
+footer {
+  background: #222222;
+  color: #aaa;
+}
+
+footer .footer_main a {
+  color: #aaa;
+  background-color: transparent;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+footer .footer_main i {
+  line-height: 42px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #454545;
+  transition: all 0.5s;
+}
+
+footer .footer_main i:hover {
+  border-color: #35a22c;
+  color: #35a22c;
+}
+
+footer .footer_copyright {
+  padding-top: 30px;
+  margin-top: 30px;
+  border-top: 1px solid #454545;
+}
+
+footer .footer_copyright p {
+  color: #aaa;
+}
+
+footer .footer_copyright a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #35a22c;
+}
+
 @keyframes zoomOut {
   from {
     transform: scale(0);
