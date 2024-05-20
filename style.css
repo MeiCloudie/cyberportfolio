@@ -180,9 +180,13 @@ body .cd-top--is-visible {
   color: white;
   background-image: url(./img/3.jpg);
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 80px 0;
   text-align: center;
 }
+
 .cyber_available::before {
   position: absolute;
   content: "";
@@ -209,6 +213,36 @@ body .cd-top--is-visible {
   background-color: black;
 }
 
+/* css cyber_award */
+.cyber_award {
+  position: relative;
+  background-image: url(./img/memphis_3.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  padding: 80px 0;
+}
+
+.cyber_award::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  opacity: 0.5;
+}
+
+.cyber_award .cyber_award_left {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+  padding: 45px;
+}
+
 @keyframes zoomOut {
   from {
     transform: scale(0);
@@ -231,8 +265,8 @@ body .cd-top--is-visible {
   }
 } */
 
-@media screen and (min-width: 820px) {
+/* @media screen and (min-width: 820px) {
   header .navbar-brand span {
     color: green !important;
   }
-}
+} */
